@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  },
+  "name": "weatherproject",
+  "version": "1.0.0",
+  "description": "Hii, I am making Weather Project with search feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinayak Raj",
+  "license": "ISC"
+}

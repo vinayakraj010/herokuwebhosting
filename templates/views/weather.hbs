@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>weblinks}}
+</head>
+
+<body class="desktop_view ">
+    {{>header}}
+    <div id="search_container">
+        <div class="search_bar">
+            <input id="search" type="text" placeholder="Enter your city name" autocomplete="off">
+            <input type="submit" value="search" id="sub_btn">
+        </div>
+        <div class="searched_box" id="searched_box">
+            <div class="top_layer">
+                <p id="day"></p>
+                <p id="date">21 oct</p>
+            </div>
+            <div class="main_layer">
+                <p id="city_name">Enter Your city name</p>
+                <div class="middle_layer data_hide">
+                    <p><span id="temp"></p>
+                    <span id="temp_status"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</body>
+<script src="./js/main.js"></script>
+
+</html>

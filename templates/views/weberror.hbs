@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>weblinks}}
+</head>
+<style>
+    .errorImg {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .errorImg img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #error_button {
+        padding: 10px 15px 10px 15px;
+        border: 2px solid black;
+        border-radius: 5px;
+
+    }
+
+    #error_button:hover {
+        border: 2px solid var(--main_bg);
+        background: rgb(224, 224, 224);
+    }
+
+    #error_button a {
+        color: black;
+        font-size: 20px;
+    }
+</style>
+
+<body class="desktop_view ">
+    {{>header}}
+    <div class="errorImg">
+        <img src="img/error_img.png" alt="">
+        <button id="error_button">
+            <a href="/">HOME</a></button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    --main_bg: #0a5147;
+    --main_color: #14b099;
+}
+
+.theme_color {
+    color: var(--main_color);
+}
+
+.mobile_view #Header {
+    height: 20rem;
+}
+
+/* Navigation Design  */
+#button {
+    display: none;
+}
+
+.mobile_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hamburger_menu {
+    display: none;
+
+}
+
+.menu_bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 6px;
+    transition: .5s ease-in;
+    transform-origin: left;
+    background: white;
+
+}
+
+
+#logo {
+    text-align: center;
+    line-height: 4rem;
+    font-size: 20px;
+}
+
+#logo a {
+    color: white;
+}
+
+#Header {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    background: var(--main_bg);
+    justify-content: space-between;
+    padding: 0 9rem 0 9rem;
+    transition: .5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    padding-top: 5px;
+
+}
+
+.navigation ul li {
+    margin: 1rem;
+}
+
+.navigation ul li a {
+    color: white;
+
+}
+
+/* Main Container  */
+.main_container {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+
+}
+
+.child_container {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+}
+
+#first_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 5rem;
+
+}
+
+#first_container h1 {
+    font-size: 4rem;
+}
+
+#first_container p {
+    font-size: 20px;
+}
+
+#second_container {
+    display: grid;
+    place-items: center;
+
+}
+
+#img_slider {
+    width: 100%;
+    /* height: 80%; */
+}
+
+footer {
+    background: var(--main_bg);
+    display: grid;
+    place-items: center;
+    margin-top: auto;
+
+}
+
+footer a {
+    color: black;
+    padding: 1rem;
+}
+
+
+
+/* weather page css  */
+#search_container {
+    margin: 2rem auto 0 auto;
+    width: 50%;
+}
+
+.search_bar {
+    width: 100%;
+    height: 50px;
+}
+
+.search_bar input {
+    padding: 0 10px 0 10px;
+    outline: none;
+    border: none;
+    background-color: var(--main_bg);
+    border-radius: 20px;
+    color: white;
+}
+
+#search {
+    width: 79%;
+    height: 100%;
+    border: 4px solid var(--main_color);
+}
+
+#sub_btn {
+    width: 20%;
+    height: 100%;
+    border: 4px solid var(--main_color);
+}
+
+#sub_btn:hover {
+    background-color: #0f6b5f;
+}
+
+.searched_box {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 5px solid var(--main_color);
+}
+
+.top_layer {
+    background-color: var(--main_color);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem 0 4rem;
+}
+
+.main_layer {
+    width: 100%;
+    padding: 4rem;
+    font-size: 2rem;
+}
+
+#city_name {
+    display: inline-block;
+}
+
+.middle_layer {
+    font-size: 6rem;
+    margin-top: 2rem;
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Responsive Css  */
+@media (max-width:800px) {
+    #button {
+        display: block;
+    }
+
+    .child_container {
+        width: 100%;
+    }
+
+    .main_container {
+        flex-direction: column;
+    }
+
+    #Header {
+        display: block;
+        padding: 0 10px 0 10px;
+    }
+
+    .navigation ul {
+        display: block;
+    }
+
+    .navigation ul li {
+        text-align: center;
+        margin: 2rem 25vw 2rem 25vw;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+
+    .navigation ul li:hover {
+        background-color: var(--main_color);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    #search_container {
+        width: 100vw;
+        padding: 10px 2px;
+    }
+
+    #search {
+        width: 77vw;
+        border: 2px solid var(--main_color);
+    }
+
+    #sub_btn {
+        width: 20vw;
+        border: 2px solid var(--main_color);
+    }
+
+    .top_layer {
+        padding: 7px;
+    }
+
+    .main_layer {
+        padding: 7px;
+        font-size: 1.5rem;
+    }
+
+    #city_name {
+        margin-top: 10px;
+    }
+
+    .searched_box {
+        border: 2px solid var(--main_color);
+    }
+
+    .middle_layer {
+        padding-right: 10px;
+    }
+
+    #temp {
+        font-size: 2.5rem;
+    }
+
+    #temp_status {
+        font-size: 5rem;
+    }
+
+}
